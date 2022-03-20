@@ -454,7 +454,7 @@
 					"$(PROJECT_DIR)/AppCentre",
 				);
 				INFOPLIST_FILE = Minutes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.biomedical.phil.MyMinutes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,7 +474,7 @@
 					"$(PROJECT_DIR)/AppCentre",
 				);
 				INFOPLIST_FILE = Minutes/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.biomedical.phil.MyMinutes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
