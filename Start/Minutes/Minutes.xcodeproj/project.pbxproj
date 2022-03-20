@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		1BA9BEC527E4025700A4D522 /* MinutesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BA9BEC427E4025700A4D522 /* MinutesTests.swift */; };
+		1BA9BED127E7960F00A4D522 /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9BECC27E7960F00A4D522 /* AppCenter.framework */; };
+		1BA9BED227E7961000A4D522 /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9BECD27E7960F00A4D522 /* AppCenterCrashes.framework */; };
+		1BA9BED327E7961000A4D522 /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9BECE27E7960F00A4D522 /* AppCenterAnalytics.framework */; };
+		1BA9BED427E7961000A4D522 /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1BA9BECF27E7960F00A4D522 /* AppCenterDistributeResources.bundle */; };
+		1BA9BED527E7961000A4D522 /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA9BED027E7960F00A4D522 /* AppCenterDistribute.framework */; };
 		D3048F28202E2B2D00D45D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3048F27202E2B2D00D45D7E /* AppDelegate.swift */; };
 		D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3048F2B202E2B2D00D45D7E /* Main.storyboard */; };
 		D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3048F2E202E2B2D00D45D7E /* Assets.xcassets */; };
@@ -31,6 +36,11 @@
 /* Begin PBXFileReference section */
 		1BA9BEC227E4025700A4D522 /* MinutesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinutesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BA9BEC427E4025700A4D522 /* MinutesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinutesTests.swift; sourceTree = "<group>"; };
+		1BA9BECC27E7960F00A4D522 /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
+		1BA9BECD27E7960F00A4D522 /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
+		1BA9BECE27E7960F00A4D522 /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		1BA9BECF27E7960F00A4D522 /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		1BA9BED027E7960F00A4D522 /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
 		D3048F24202E2B2D00D45D7E /* Minutes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minutes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3048F27202E2B2D00D45D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3048F2C202E2B2D00D45D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,6 +65,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BA9BED127E7960F00A4D522 /* AppCenter.framework in Frameworks */,
+				1BA9BED327E7961000A4D522 /* AppCenterAnalytics.framework in Frameworks */,
+				1BA9BED527E7961000A4D522 /* AppCenterDistribute.framework in Frameworks */,
+				1BA9BED227E7961000A4D522 /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,9 +83,22 @@
 			path = MinutesTests;
 			sourceTree = "<group>";
 		};
+		1BA9BECB27E7959100A4D522 /* AppCentre */ = {
+			isa = PBXGroup;
+			children = (
+				1BA9BECC27E7960F00A4D522 /* AppCenter.framework */,
+				1BA9BECE27E7960F00A4D522 /* AppCenterAnalytics.framework */,
+				1BA9BECD27E7960F00A4D522 /* AppCenterCrashes.framework */,
+				1BA9BED027E7960F00A4D522 /* AppCenterDistribute.framework */,
+				1BA9BECF27E7960F00A4D522 /* AppCenterDistributeResources.bundle */,
+			);
+			path = AppCentre;
+			sourceTree = "<group>";
+		};
 		D3048F1B202E2B2D00D45D7E = {
 			isa = PBXGroup;
 			children = (
+				1BA9BECB27E7959100A4D522 /* AppCentre */,
 				D3048F26202E2B2D00D45D7E /* Minutes */,
 				1BA9BEC327E4025700A4D522 /* MinutesTests */,
 				D3048F25202E2B2D00D45D7E /* Products */,
@@ -153,12 +180,12 @@
 				TargetAttributes = {
 					1BA9BEC127E4025700A4D522 = {
 						CreatedOnToolsVersion = 13.2.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						TestTargetID = D3048F23202E2B2D00D45D7E;
 					};
 					D3048F23202E2B2D00D45D7E = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -196,6 +223,7 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+				1BA9BED427E7961000A4D522 /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,7 +289,8 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U3NQYT99VJ;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -271,6 +300,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.biomedical.MinutesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,7 +318,8 @@
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U3NQYT99VJ;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -296,6 +328,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = uk.co.biomedical.MinutesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -351,7 +385,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -402,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -414,13 +448,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = U3NQYT99VJ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCentre",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.biomedical.phil.MyMinutes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "minutes profile";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,13 +469,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AppCentre",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
+				PRODUCT_BUNDLE_IDENTIFIER = uk.co.biomedical.phil.MyMinutes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
